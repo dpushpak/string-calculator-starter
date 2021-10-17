@@ -24,4 +24,11 @@ class StringCalculatorShould {
 		assertTrue(result == 41);
 		
 	}
+    @Test
+	void testStringForNegativeNubmer() {
+    	StringCalculator stringCalculator = new StringCalculator();
+		int result = stringCalculator.add("1,2\n,3,-5,7");
+		assertTrue(result == 0);
+		
+	}
 }
