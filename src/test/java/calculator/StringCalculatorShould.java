@@ -31,4 +31,10 @@ class StringCalculatorShould {
 		assertTrue(result == 0);
 		
 	}
+    @Test
+	public final void IfOneOrMoreNumbersAreGreaterThan1000ThenItnotInSum() {
+    	StringCalculator stringCalculator = new StringCalculator();
+	    int result = stringCalculator.add("5,1001,7,1278");
+	    assertTrue(result == 12);
+	}
 }
