@@ -17,4 +17,11 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
+    @Test
+    void testStringForDifferentDelimiter() {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	int result = stringCalculator.add("1,2, ,\n,3,1;7:8|7/6//6");
+		assertTrue(result == 41);
+		
+	}
 }
